@@ -329,7 +329,7 @@ function SEAD_RANGE:_AddSiteMenu( PriSiteName )
               _cat_menu3 = MENU_COALITION:New(self.coalition, "More...", _cat_menu2)
             end
             if _cat_menu3.MenuCount < 9 then
-              MENU_COALITION_COMMAND:New(self.coalition, vl.name, _cat_menu3, SEAD_RANGE._SpawnSecondary, self, PriSiteName, _spawner_name, 66)
+              MENU_COALITION_COMMAND:New(self.coalition, val.name, _cat_menu3, SEAD_RANGE._SpawnSecondary, self, PriSiteName, _spawner_name, 66)
             else 
               local _cat_menu4 _cat_menu3:GetMenu("More...")
               if _cat_menu4 == nil then 
